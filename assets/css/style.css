@@ -42,10 +42,10 @@ article {
 }
 
 .profile-photo {
-  width: 240px;
+  width: 60px;
   max-width: 30%;
   height: auto;
-  border-radius: 12px;
+  border-radius: 2px;
 }
 
 @media (max-width: 700px) {
