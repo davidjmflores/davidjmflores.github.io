@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Hybrid Navigation using Reinforcement Learning</title>
+  <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Hybrid Navigation using Reinforcement Learning</h1>
+
+    <nav>
+      <a href="../index.html">Home</a>
+      <a href="../projects.html">Projects</a>
+    </nav>
+  </header>
+
+  <main>
+   <section>
+    <h2>Overview</h2>
+
+    <p>
+      Reinforcement learning (RL) is often introduced through simple environments, but applying it
+      to robotics requires dealing with larger state spaces, noisy observations, continuous
+      motion, and physical constraints. This project is meant to build that bridge gradually
+      from toy examples to high fidelity simulations. The goal is to study how different RL
+      methods behave in controlled navigation problems, then use those results to guide 
+      later work in continuous and sensor-based robotic environments. The project begins with discrete
+      gridworlds because they make algorithm behavior easy to inspect and compare.
+    </p>
+
+    <p>
+      Code repository:
+      <a href="https://github.com/davidjmflores/ros2-rl-nav">GitHub repository</a>
+    </p>
+  </section>
+
+
+  <section>
+  <h2>Project Roadmap</h2>
+
+  <div class="roadmap">
+    <section class="roadmap-phase">
+      <h3>Phase 1: Discrete 2D Gridworld</h3>
+
+      <p>
+        The first phase builds a custom tabular gridworld framework with configurable maps,
+        obstacle layouts, start and goal states, and a visualizer for inspecting agent behavior.
+        This phase is used to compare classical tabular RL algorithms
+        under controlled navigation tasks.
+      </p>
+
+      <ul>
+        <li>Custom discrete gridworld environment</li>
+        <li>Gridworld visualizer</li>
+        <li>Multiple map layouts</li>
+        <li>Tabular SARSA, Expected SARSA, n-step SARSA</li>
+        <li>Q-learning and Double Q-learning</li>
+        <li>Dyna-Q and Prioritized Sweeping</li>
+        <li>Hyperparameter sweeps over epsilon, alpha, gamma, and n</li>
+        <li>Final comparison between the best algorithm from each method family</li>
+      </ul>
+    </section>
+
+    <section class="roadmap-phase">
+      <h3>Phase 2: Continuous 2D Navigation</h3>
+
+      <p>
+        The second phase will move from discrete grid cells to continuous 2D state spaces.
+        This phase will introduce approximate RL methods, feature-based
+        value functions, and simple simulated sensors for local navigation.
+      </p>
+    </section>
+
+    <section class="roadmap-phase">
+      <h3>Phase 3: 3D Physics-Based Navigation</h3>
+
+      <p>
+        The final planned phase will extend the project into a 3D physics-based robotics
+        environment with more realistic dynamics, improved sensors, and approximate or
+        deep RL methods for navigation.
+      </p>
+    </section>
+  </div>
+  </section>
+  </main>
+</body>
+</html>
