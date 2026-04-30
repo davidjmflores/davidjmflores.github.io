@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phase 1: Discrete 2D Gridworld</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+  <header>
+    <h1>Phase 1: Discrete 2D Gridworld</h1>
+
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../projects.html">Projects</a>
+        <a href="hybrid-nav-rl.html">Back to Project</a>
+    </nav>
+  </header>
+
+  <main>
+    <section>
+        <h2>Overview</h2>
+
+        <p>
+            This phase builds a custom tabular gridworld framework for studying reinforcement
+            learning algorithms in controlled navigation problems. The goal is to make agent
+            behavior easy to inspect before moving to continuous and robotics-based environments.
+        </p>
+    </section>
+
+    <section>
+        <h2>Custom Discrete Gridworld Environment</h2>
+
+        <div class="gridworld-section">
+            <div>
+            <p>
+                The parameters of the test environment are as follows:
+            </p>
+
+            <ul>
+                <li>10x10 Gridworld environment</li>
+                <li>Regular states (white), walls (black), start ('S'), and goal (green)</li>
+                <li>Deterministic state transitions</li>
+                <li>Reward of -1 for every non-terminal transition</li>
+                <li>Up, down, left, and right agent action selection</li>
+                <li>Square blue agent</li>
+                <li>Matplotlib-based frame visualization</li>
+            </ul>
+            </div>
+
+            <img
+            class="gridworld-image"
+            src="../assets/images/discrete_gridworld_maze.png"
+            alt="10 by 10 discrete gridworld environment with walls, start state, goal state, and agent"
+            >
+        </div>
+    </section>
+  </main>
+</body>
+</html>

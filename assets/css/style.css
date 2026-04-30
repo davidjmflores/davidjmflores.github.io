@@ -4,43 +4,32 @@ body {
   margin: 40px auto;
   padding: 0 20px;
   line-height: 1.6;
-  color: #222;
-}
+  color: #222;}
 
 header {
   border-bottom: 1px solid #ddd;
   margin-bottom: 30px;
-  padding-bottom: 20px;
-}
+  padding-bottom: 20px;}
 
 nav a {
   margin-right: 15px;
   text-decoration: none;
-  color: #0366d6;
-}
+  color: #0366d6;}
 
-nav a:hover {
-  text-decoration: underline;
-}
+nav a:hover {text-decoration: underline;}
 
-h1, h2, h3 {
-  color: #111;
-}
+h1, h2, h3 {color: #111;}
 
-article {
-  margin-bottom: 25px;
-}
+article {margin-bottom: 25px;}
 
 .about-container {
   display: flex;
   align-items: flex-start;
-  gap: 2rem;
-}
+  gap: 2rem;}
 
 .about-text {
   flex: 1;
-  min-width: 0;
-}
+  min-width: 0;}
 
 .profile-photo {
   flex: 0 0 360px;
@@ -48,26 +37,20 @@ article {
   height: auto;
   max-width: 360px;
   border-radius: 2px;
-  object-fit: contain;
-}
+  object-fit: contain;}
 
 @media (max-width: 700px) {
-  .about-container {
-    flex-direction: column;
-  }
+  .about-container {flex-direction: column;}
 
   .profile-photo {
     width: 220px;
-    max-width: 100%;
-  }
-}
+    max-width: 100%;}}
 
 .project-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
-  margin-top: 24px;
-}
+  margin-top: 24px;}
 
 .project-card {
   display: block;
@@ -77,74 +60,107 @@ article {
   border-radius: 14px;
   overflow: hidden;
   background: #fff;
-  transition: transform 0.15s ease, box-shadow 0.15s ease;
-}
+  transition: transform 0.15s ease, box-shadow 0.15s ease;}
 
 .project-card:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);
-}
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.10);}
 
 .project-card img {
   width: 100%;
   height: 180px;
   object-fit: cover;
   display: block;
-  background: #f2f2f2;
-}
+  background: #f2f2f2;}
 
-.project-card-content {
-  padding: 18px;
-}
+.project-card-content {padding: 18px;}
 
 .project-card-content h3 {
   margin-top: 0;
-  margin-bottom: 10px;
-}
+  margin-bottom: 10px;}
 
 .project-card-content p {
-  margin-bottom: 14px;
-}
+  margin-bottom: 14px;}
 
 .project-tags {
   display: flex;
   flex-wrap: wrap;
-  gap: 8px;
-}
+  gap: 8px;}
 
 .project-tags span {
   font-size: 0.85rem;
   padding: 4px 9px;
   border-radius: 999px;
   background: #f1f1f1;
-  color: #333;
-}
+  color: #333;}
 
 .roadmap {
   margin-top: 20px;
   display: grid;
-  gap: 18px;
-}
+  gap: 18px;}
 
 .roadmap-phase {
   padding: 18px 22px;
-  margin-left: 18px;
+  border: 1px solid #ddd;
   border-left: 4px solid #ccc;
   background: #f7f7f7;
-  border-radius: 10px;
-}
+  border-radius: 10px;}
 
 .roadmap-phase h3 {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 1.15rem;
-  color: #333;
+  color: #333;}
+
+.roadmap-phase p {margin-top: 0;}
+
+.roadmap-phase ul {margin-bottom: 0;}
+
+.phase-link {
+  display: block;
+  text-decoration: none;
+  color: #222;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, background 0.15s ease;}
+
+.phase-link:visited {color: #222;}
+
+.phase-link:hover {
+  background: #f0f0f0;
+  border-color: #bbb;
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);}
+
+.phase-link h3::after {content: " →";}
+
+.roadmap-phase.phase-link,
+.roadmap-phase.phase-link * {
+  color: #222;
+  text-decoration: none;}
+
+.gridworld-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 28px;
 }
 
-.roadmap-phase p {
-  margin-top: 0;
+.gridworld-section > div {
+  flex: 1;
 }
 
-.roadmap-phase ul {
-  margin-bottom: 0;
+.gridworld-image {
+  width: 320px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+@media (max-width: 700px) {
+  .gridworld-section {
+    flex-direction: column;
+  }
+
+  .gridworld-image {
+    width: 100%;
+  }
 }
